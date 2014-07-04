@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/add.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready(function(){
+		$(".top-navigation__like").click(function(){
+		$("#like__panel").slideToggle("normal"); return false;
+		});
+	});
+	</script>
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".b-carousel-button-right").click(function(){ // при клике на правую кнопку запускаем следующую функцию:
+				$(".h-carousel-items").animate({left: "-98px"}, 200); // производим анимацию: блок с набором картинок уедет влево на 620 пикселя (это ширина одного прокручиваемого элемента) за 200 милисекунд.
+				setTimeout(function () { // устанавливаем задержку времени перед выполнением следующих функций. Задержка нужна, т.к. эти ффункции должны запуститься только после завершения анимации.
+					$(".h-carousel-items .b-carousel-block").eq(0).clone().appendTo(".h-carousel-items"); // выбираем первый элемент, создаём его копию и помещаем в конец карусели
+					$(".h-carousel-items .b-carousel-block").eq(0).remove(); // удаляем первый элемент карусели		
+					$(".h-carousel-items").css({"left":"0px"}); // возвращаем исходное смещение набора набора элементов карусели
+				}, 300);
+			});
+			
+			$(".b-carousel-button-left").click(function(){ // при клике на левую кнопку выполняем следующую функцию:		
+				$(".h-carousel-items .b-carousel-block").eq(-1).clone().prependTo(".h-carousel-items"); // выбираем последний элемент набора, создаём его копию и помещаем в начало набора	
+				$(".h-carousel-items").css({"left":"-98px"}); // устанавливаем смещение набора -620px		
+				$(".h-carousel-items").animate({left: "0px"}, 200); // за 200 милисекунд набор элементов плавно переместится в исходную нулевую точку
+				$(".h-carousel-items .b-carousel-block").eq(-1).remove(); // выбираем последний элемент карусели и удаляем его
+			});
+			
+		});
+	</script>
+	<script type="text/javascript" src="up.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="all-wrapper">
+		<div class="header">
+				<a href="#" class="header__saletxt"><strong>ОПТОВЫМ КЛИЕНТАМ</strong></a>
+				<div class="top-navigation">
+					<a href="#" class="top-navigation__art-territory"><img src="img/logo/logo_art-territory.png" alt="АРТ Территория"></a>
+					<a href="#" class="top-navigation__hodabbi"><img src="img/logo/logo_hodabbi.png" alt="ХоДабби"></a>
+					<div class="top-navigation__like">
+						<div class="like__bg"><a href="#" class="like"></a></div>
+						<div class="other-likes" id="like__panel">
+							<img src="img/icons/twitter-like.png" alt="#">
+							<img src="img/icons/fb-like.png" alt="#">
+							<img src="img/icons/vk-like.png" alt="#">
+						</div>
+					</div>
+					<div class="top-navigation__menu">
+						<a href="#" class="menu__home home__header"></a>
+						<ul class="menu__panel"> 
+							</li><a href="#" class="menu__item menu__is-selected"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>МАГАЗИНЫ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КОНТАКТЫ</strong></a></li>
+						</ul>	
+					</div>
+				</div>
+			</div><!-- END header-->
+		<div class="content">
+			<div class="heading">
+				<div class="heading__wrapper is-pinkbg">
+					<ul class="heading__way">
+						<li class="is-first"><a href="#">Главная</a></li>
+					</ul>
+					<h1>Компания</h1>
+				</div>
+			</div>
+			<div class="socnet">
+				
+				<div class="scnet">
+					<div class="fb__bg"><a href="#" class="scnet__item scnet__fb"></a></div>
+					<div class="vk__bg"><a href="#" class="scnet__item scnet__vk"></a></div>
+					<div class="twitter__bg"><a href="#" class="scnet__item scnet__twitter"></a></div>
+					<div class="mail__bg" id="mail"><a onclick="winOpen();" type="button" class="scnet__item scnet__mail"></a></div>
+						<div class="subs__hidden" id="divWin">
+							<div class="subs__bg">
+								<div class="subs__border">
+									<div id="closetButton" onclick="winCloset();"></div>
+									<h4 class="subs__heading">Подписаться<br /> на наши новости</h4>
+									<div class="subs__keyword-block"><input type="text" placeholder="ваш e-mail" class="subs__keyword"></div>
+									<input type="button" class="subs__submit" value="ПОДПИСАТЬСЯ">
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="company">
+					<h2 class="font__30px">10 лет на рынке, и это не случайность</h2>
+					<h2 class="is-red">Творчество в домашних условиях</h2>
+					<div class="company__content">
+						<p class="is-grey">На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». </p>
+						<p class="company__text">И это не случайность. Товары для хобби призваны скрасить досуг, детям и взрослым интересно попробовать свои силы в разных техниках, поэксвериментировать с материалами.
+						Творчество в домашних условиях стало популярным, подарки, сделанные своими руками в последнее время служат признаком хорошего тона.</p>
+					</div>
+					<div class="company__pr">
+						<img src="img/icons/icon-1400861218_calendar-alt.png" alt="#" class="company__img">
+						<p class="company__text">Со дня основания компании уже прошло 8 лет! За это время мы стали серьёзней, профессиональней и качественней.</p>
+					</div>
+					<div class="company__pr company-center">
+						<img src="img/icons/icon-1400861732_colors.png" alt="#" class="company__img">
+						<p class="company__text">Творчество в домашних условиях стало популярным, подарки, сделанные своими руками в последнее время служат признаком хорошего тона.
+						А декорирование дома становится более цивилизованным, переходя от подручных средств.</p>
+					</div>
+					<div class="company__pr">
+						<img src="img/icons/icon-1400861477_packpage.png" alt="#" class="company__img">
+						<p class="company__text">В нашей компании начитывается уже 20 магазинов в 7 городах Беларуси! И это не предел! Мы готовы расшириться, чтобы творчеством мог заниматься каждый!</p>
+					</div>
+					<div class="company__bord">
+						<h3><i>Товары для хобби очень динамичный сегмент рынка - он чувствителен к модным тенденциям, потребностям художников.</i></h3>
+					</div>
+					<h2 class="is-red">Невероятный ассортимент</h2>
+					<div class="company__content">
+						<p class="is-grey">На сегодняшний день товаров для изобразительного искосства и творчества прочно заняли свое место в современной жизни. Появились товары класа "хобби".</p>
+						<p class="company__text">И это не случайность. Товары для хобби призваны скрасить досуг, детям и взрослым интересно попробовать свои силы в разных техниках, поэксвериментировать с материалами.
+						Творчество в домашних условиях стало популярным, подарки, сделанные своими руками в последнее время служат признаком хорошего тона.</p>
+					</div>
+					<div class="maingl">
+						<h2 class="is-red is-margintop">Галерея нашего флагманского магазина</h2>
+						<div class="maingl__slider">
+							<div class="maingl__bigimg">
+								<img src="img/pictures/DSC_6026.png" alt="big slide" class="maingl__bigslide">
+							</div>
+							<div class="maingl__panel b-carousel">
+								<div class="maingl__slides h-carousel-wrapper">
+									<div class="slide__block h-carousel-items">
+										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
+										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
+									</div>
+								</div>
+								<a class="b-carousel-button-left"></a>
+								<a class="b-carousel-button-right"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--END content-->
+		<div class="footer">
+				<div class="footer__wrapper">
+					<div class="comp">© 2001–2014, ООО «Палитра»
+					<a href="#" class="is-yellow">info@kisti-kraski.by</a></div>
+					<div class="footer__menu">
+						<a href="#" class="menu__home home__footer"></a>
+						<ul class="footer__panel"> 
+							</li><a href="#" class="footer__item ftr__is-selected"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>МАГАЗИНЫ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="footer__item is-last"><strong>КОНТАКТЫ</strong></a></li>
+						</ul>	
+						<div class="footer__socialnet">
+							<a href="#" class="footer__vk"></a>
+							<a href="#" class="footer__fb"></a>
+							<a href="#" class="footer__twitter"></a>
+						</div>
+						<div class="footer__button-up"><a href="#"><span>НАВЕРХ</span></a></div>
+					</div>
+					<a href="#" class="is-right madein"></a>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- END out-->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/add.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready(function(){
+		$(".top-navigation__like").click(function(){
+		$("#like__panel").slideToggle("normal"); return false;
+		});
+	});
+	</script>
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script type="text/javascript" src="up.js"></script>
+</head>
+<body class="opt">
+
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="all-wrapper">
+		<div class="header">
+			<a href="#" class="header__saletxt"><strong>РОЗНИЧНЫМ ПОКУПАТЕЛЯМ</strong></a>
+				<div class="top-navigation">
+				<a href="#" class="top-navigation__palitra"><img src="img/logo/logo-palitra.png" alt="Палитра"></a>
+					<div class="top-navigation__like">
+						<div class="like__bg"><a href="#" class="like"></a></div>
+						<div class="other-likes" id="like__panel">
+							<img src="img/icons/twitter-like.png" alt="#">
+							<img src="img/icons/fb-like.png" alt="#">
+							<img src="img/icons/vk-like.png" alt="#">
+						</div>
+					</div>
+					<div class="top-navigation__menu">
+						<a href="#" class="menu__home home__header"></a>
+						<ul class="menu__panel"> 
+							</li><a href="#" class="menu__item"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="menu__item menu__is-selected"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>БРЕНДЫ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>ПАРТНЁРЫ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КОНТАКТЫ</strong></a></li>	
+						</ul>	
+					</div>
+				</div>
+			</div><!-- END header-->
+		<div class="content">
+			<div class="heading">
+				<div class="heading__wrapper is-azurebg">
+					<ul class="heading__way">
+						<li class="is-first"><a href="#">Главная</a></li>
+					</ul>
+					<h1>Последние новости</h1>
+				</div>
+			</div>
+			<div class="socnet">
+				<div class="scnet">
+					<div class="mail__bg" id="mail"><a onclick="winOpen();" type="button" class="scnet__item scnet__mail"></a></div>
+						<div class="subs__hidden" id="divWin">
+							<div class="subs__bg">
+								<div class="subs__border">
+									<div id="closetButton" onclick="winCloset();"></div>
+									<h4 class="subs__heading">Подписаться<br /> на наши новости</h4>
+									<div class="subs__keyword-block"><input type="text" placeholder="ваш e-mail" class="subs__keyword"></div>
+									<input type="button" class="subs__submit" value="ПОДПИСАТЬСЯ">
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="news width34">
+					<div class="news__block news__bg1">
+					<div class="news__bg11">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-orangebg info__bot-first">
+							<h2><a href="#">Новые поступления профессиональных кистей<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+							<div class="lil-info__date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news__block news__bg2">
+					<div class="news__bg21">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-yellowbg">
+								<h2><a href="#">Невероятные скидки на рамки<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+								<div class="date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news__block news__bg3">
+					<div class="news__bg31">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-azurebg">
+								<h2><a href="#">Невероятные скидки на кисти<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+								<div class="date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="margin12">
+				<div class="news width34">
+					<div class="news__block news__bg4">
+					<div class="news__bg41">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-redbg">
+								<h2><a href="#">Невероятные скидки на рамки<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+								<div class="date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news__block news__bg5">
+					<div class="news__bg51">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-bluebg">
+								<h2><a href="#">Невероятные скидки на рамки<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+								<div class="date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news__block news__bg6">
+					<div class="news__bg61">
+					</div>
+						<div class="news__inf">
+							<div class="info__bot is-pinkbg">
+								<h2><a href="#">Невероятные скидки на рамки<span class="lil-info__arrow"> </span></a></h2>
+								<p>На сегодняшний день товары для изобразительного искусства и творчества прочно заняли своё место в современной жизни. Появились товары класса «хобби». 
+	И это не случайность.</p>
+								<div class="date">25 Сентября 2014</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--END content-->
+		<div class="footer">
+				<div class="footer__wrapper">
+					<div class="comp">© 2001–2014, ООО «Палитра»
+					<a href="#" class="is-yellow">info@kisti-kraski.by</a></div>
+					<div class="footer__menu">
+						<a href="#" class="menu__home home__footer"></a>
+						<ul class="footer__panel"> 
+							</li><a href="#" class="footer__item"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="footer__item ftr__is-selected"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>БРЕНДЫ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>ПАРТНЁРЫ</strong></a></li>
+							</li><a href="#" class="footer__item is-last"><strong>КОНТАКТЫ</strong></a></li>
+						</ul>	
+						<div class="footer__socialnet">
+							<a href="#" class="footer__vk"></a>
+							<a href="#" class="footer__fb"></a>
+							<a href="#" class="footer__twitter"></a>
+						</div>
+						<div class="footer__button-up"><a href="#"><span>НАВЕРХ</span></a></div>
+					</div>
+					<a href="#" class="is-right madein"></a>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- END out-->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

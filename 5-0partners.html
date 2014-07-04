@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/add.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready(function(){
+		$(".top-navigation__like").click(function(){
+		$("#like__panel").slideToggle("normal"); return false;
+		});
+	});
+	</script>
+	<script type="text/javascript"> 
+	$(document).ready(function(){
+		$("#more-cities").click(function(){
+		$(".shops__cities").slideToggle("normal"); return false;
+		});
+	});
+	</script> 
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script type="text/javascript" src="up.js"></script>
+</head>
+<body class="opt">
+
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="all-wrapper">
+		<div class="header">
+			<a href="#" class="header__saletxt"><strong>РОЗНИЧНЫМ ПОКУПАТЕЛЯМ</strong></a>
+				<div class="top-navigation">
+				<a href="#" class="top-navigation__palitra"><img src="img/logo/logo-palitra.png" alt="Палитра"></a>
+					<div class="top-navigation__like">
+						<div class="like__bg"><a href="#" class="like"></a></div>
+						<div class="other-likes" id="like__panel">
+							<img src="img/icons/twitter-like.png" alt="#">
+							<img src="img/icons/fb-like.png" alt="#">
+							<img src="img/icons/vk-like.png" alt="#">
+						</div>
+					</div>
+					<div class="top-navigation__menu">
+						<a href="#" class="menu__home home__header"></a>
+						<ul class="menu__panel"> 
+							</li><a href="#" class="menu__item"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>БРЕНДЫ</strong></a></li>
+							</li><a href="#" class="menu__item menu__is-selected"><strong>ПАРТНЁРЫ</strong></a></li>
+							</li><a href="#" class="menu__item"><strong>КОНТАКТЫ</strong></a></li>
+						</ul>	
+					</div>
+				</div>
+			</div><!-- END header-->
+		<div class="content">
+			<div class="heading">
+				<div class="heading__wrapper is-orangebg">
+					<ul class="heading__way">
+						<li class="is-first"><a href="#">Главная</a></li>
+					</ul>
+					<h1>Партнёры</h1>
+				</div>
+			</div>
+			<div class="socnet bg_opt">
+				<div class="scnet">
+					<div class="mail__bg" id="mail"><a onclick="winOpen();" type="button" class="scnet__item scnet__mail"></a></div>
+						<div class="subs__hidden" id="divWin">
+							<div class="subs__bg">
+								<div class="subs__border">
+									<div id="closetButton" onclick="winCloset();"></div>
+									<h4 class="subs__heading">Подписаться<br /> на наши новости</h4>
+									<div class="subs__keyword-block"><input type="text" placeholder="ваш e-mail" class="subs__keyword"></div>
+									<input type="button" class="subs__submit" value="ПОДПИСАТЬСЯ">
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="company shops opt-pdtp">
+					<div class="shops__container is-padding-bottom2">
+						<h2 class="font__30px bottom-line">Минск</h2>
+						<div class="shops__block">
+							<h2 class="is-red">ИП Бекиш Л.Т.</h2>
+							<span class="address">г. Минск, ул. Бобруйская 6, 3-й этаж</span>
+							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 394-91-11</strong></span>
+							<span class="is-grey time">Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18. </span>
+							<a href="#" class="shops__tomap">Показать на карте</a>
+						</div>
+						<div class="shops__block">
+							<h2 class="is-red">Магазин "Красочник"</h2>
+							<span class="address">г. Минск, ул. Сурганова 16, 3-й этаж</span>
+							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 31-98-63</strong></span>
+							<span class="is-grey time">Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18. </span>
+							<a href="#" class="shops__tomap">Показать на карте</a>
+						</div>
+						<div class="shops__block">
+							<h2 class="is-red">ТД “На Немиге”</h2>
+							<span class="address">г. Минск, ул. Немига 3, павильон 8</span>
+							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 394-91-11</strong></span>
+							<span class="is-grey time">Режим работы: пн-вс.: 10 - 21. </span>
+							<a href="#" class="shops__tomap">Показать на карте</a>
+						</div>
+					</div>
+					<div class="shops__container">
+						<h2 class="font__30px bottom-line">Могилёв</h2>
+						<div class="shops__block">
+							<h2 class="is-red">ООО "АртБЕНК"</h2>
+							<span class="address">г. Могилёв, ул. Яцыно 5, 3-й этаж</span>
+							<span class="phone-nomber">Тел/факс: <strong>+375 (0222) 25-87-19</strong></span>
+							<span class="is-grey time">Режим работы: пн-пт.: 10 - 19, сб.: 10 - 17,  вс.: 10 - 15. </span>
+						</div>
+					</div>
+					<div class="shops__container">
+						<h2 class="font__30px bottom-line">Гомель</h2>
+						<div class="shops__block">
+							<h2 class="is-red">ТЦ “Секрет”</h2>
+							<span class="address">г. Гомель, ул. Гагарина 65, 4-й этаж</span>
+							<span class="phone-nomber">Тел/факс: <strong>+375  (0232) 75-06-49 <br />+ 375 (044) 577-0-566</strong></span>
+							<span class="is-grey time">Режим работы: пн.: 10 - 17., вт-вс.:10 - 20. </span>
+						</div>
+					</div>
+					<div class="shops__container">
+						<h2 class="font__30px bottom-line">Брест</h2>
+						<div class="shops__block">
+							<h2 class="is-red">Магазин “Ходабби”</h2>
+							<span class="address">г. Брест, бр. Космонавтов 120</span>
+							<span class="phone-nomber">Тел/факс: <strong>+ 375 (0162) 22-03-34.</strong></span>
+							<span class="is-grey time">Режим работы: пн-сб.: 10 - 19, вс 10 - 15. </span>
+						</div>
+					</div>
+					<div class="shops__container">
+						<h2 class="font__30px bottom-line">Витебск</h2>
+						<div class="shops__block">
+							<h2 class="is-red">Магазин “Ходабби”</h2>
+							<span class="address">г. Витебск, ул. Кирова 7/13</span>
+							<span class="phone-nomber">Тел/факс: <strong>+ 375 (0212) 37-26-59</strong></span>
+							<span class="is-grey time">Режим работы: пн-сб 10 - 19, вс 10 -15. </span>
+						</div>
+					</div>
+					<div class="shops__container">
+						<h2 class="font__30px bottom-line">Гродно</h2>
+						<div class="shops__block">
+							<h2 class="is-red">Магазин “Арт-территория”</h2>
+							<span class="address">г. Гродно, ул. Антонова 5а</span>
+							<span class="phone-nomber">Тел/факс: <strong>+ 375 (0152) 60-86-20</strong></span>
+							<span class="is-grey time">Режим работы: пн-вс 9 - 19. </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--END content-->
+		<div class="footer">
+				<div class="footer__wrapper">
+					<div class="comp">© 2001–2014, ООО «Палитра»
+					<a href="#" class="is-yellow">info@kisti-kraski.by</a></div>
+					<div class="footer__menu">
+						<a href="#" class="menu__home home__footer"></a>
+						<ul class="footer__panel"> 
+							</li><a href="#" class="footer__item"><strong>КОМПАНИЯ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>НОВОСТИ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>КАТАЛОГ</strong></a></li>
+							</li><a href="#" class="footer__item"><strong>БРЕНДЫ</strong></a></li>
+							</li><a href="#" class="footer__item ftr__is-selected"><strong>ПАРТНЁРЫ</strong></a></li>
+							</li><a href="#" class="footer__item is-last"><strong>КОНТАКТЫ</strong></a></li>
+						</ul>	
+						<div class="footer__socialnet">
+							<a href="#" class="footer__vk"></a>
+							<a href="#" class="footer__fb"></a>
+							<a href="#" class="footer__twitter"></a>
+						</div>
+						<div class="footer__button-up"><a href="#"><span>НАВЕРХ</span></a></div>
+					</div>
+					<a href="#" class="is-right madein"></a>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- END out-->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

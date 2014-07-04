@@ -1,11 +1,11 @@
 head.ready(function() {
 
-	var agent = navigator.userAgent,
-	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
-
-	$(document).bind(event, function(e){
-		$(".js-popup").hide();
+	$('body').addClass('a');
+	$( ".maingl" ).on( "click", ".maingl__slitem", function() {
+		
+		
+		pic = $(this).attr('href');
+		$('.maingl__bigimg').html('<img src="'+pic+'">');
+		return false;
 	});
-
-	console.log($('body').html());
 });

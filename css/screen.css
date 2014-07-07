@@ -362,8 +362,16 @@ h4 { font-size: 14px; font-weight: 400; }
 .shops__cities ul a:hover { font-weight: 600; }
 
 
-.bigmap { float: left; clear: both; width: 100%; height: 0%; padding-bottom: 38%; background: url(../img/bigmap.png) no-repeat top left; box-shadow: inset 0 20px 20px -20px #ba2607; position: relative; }
-
+.bigmap { float: left; clear: both; width: 100%;  box-shadow: inset 0 20px 20px -20px #ba2607; position: relative; }
+.bigmap{
+	overflow: hidden;
+	width: 100%;
+	background: #FFFFFF;
+}
+.bigmap img{
+	width: 100%;
+	height: auto !important;
+}
 .bigmap .bigmap__float { float: left; width: 332px; padding: 20px 15px 30px 25px; background: white; position: absolute; top: 80px; right: 270px; box-shadow: 0px 4px 10px -2px black; }
 .bigmap .bigmap__float span { font-size: 13px; }
 .bigmap .bigmap__float .bigmap__coordinates { padding-top: 7px; }

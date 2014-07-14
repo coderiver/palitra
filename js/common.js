@@ -1,9 +1,11 @@
 head.ready(function() {
+	$('.bigmap').height($('.shops__map').height());
 	$('.shops__tomap').click(function(event) {
-		$('.shops__map').hide();
-		$('.bigmap').height($('.shops__map').height());
+		$('.shops__map').fadeOut();
+		
 		idd = $(this).attr('href');
-		$(idd+'').show();
+		$(idd+'').fadeIn();
+		//alert(idd);
 		$('html, body').animate({
 	        scrollTop: $(".bigmap").offset().top
 	    }, 500);

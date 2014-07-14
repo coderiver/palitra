@@ -6,21 +6,7 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/add.css" >
-	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-	<script type="text/javascript"> 
-	$(document).ready(function(){
-		$(".top-navigation__like").click(function(){
-		$("#like__panel").slideToggle("normal"); return false;
-		});
-	});
-	</script>
-	<script type="text/javascript"> 
-	$(document).ready(function(){
-		$("#more-cities").click(function(){
-		$(".map__cities").slideToggle("normal"); return false;
-		});
-	});
-	</script> 
+
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -94,21 +80,27 @@
 					<div class="map__text">
 						Сеть магазинов для творчества:
 						профессиональные материалы
-						в <i>Минске и <a class="other-cities" id="more-cities"><span class="map__bord">других городах</span><span class="map__arrow"></span></a></i>
+						в <i><span class="map__current">Минске</span> и <a class="other-cities" id="more-cities"><span class="map__bord">других городах</span><span class="map__arrow"></span></a></i>
 						<div class="map__cities">
 							<ul>
-								<li><a href="#"><i>Минкс</i></a></li>
-								<li><a href="#"><i>Брест</i></a></li>
-								<li><a href="#"><i>Витебск</i></a></li>
+								<li><a href="#go1" data-padej="Минске"><i>Минск</i></a></li>
+								<li><a href="#go2" data-padej="Бресте"><i>Брест</i></a></li>
+								<li><a href="#go3" data-padej="Витебске"><i>Витебск</i></a></li>
 							</ul>
 							<ul>
-								<li><a href="#"><i>Гомель</i></a></li>
-								<li><a href="#"><i>Гродно</i></a></li>
-								<li><a href="#"><i>Могилев</i></a></li>
+								<li><a href="#go4" data-padej="Гомеле"><i>Гомель</i></a></li>
+								<li><a href="#go5" data-padej="Гродно"><i>Гродно</i></a></li>
+								<li><a href="#go6" data-padej="Могилеве"><i>Могилев</i></a></li>
 							</ul>
 						</div>
 						<div class="map__button"></div>
 					</div>
+					<div class="actualmap" id="go1"><img src="img/map.png" alt=""></div>
+					<div class="actualmap" id="go2" hidden><img src="img/map.png" alt=""></div>
+					<div class="actualmap" id="go3" hidden><img src="img/map.png" alt=""></div>
+					<div class="actualmap" id="go4" hidden><img src="img/map.png" alt=""></div>
+					<div class="actualmap" id="go5" hidden><img src="img/map.png" alt=""></div>
+					<div class="actualmap" id="go6" hidden><img src="img/map.png" alt=""></div>
 				</div>
 			</div>
 			<div class="catalog is-third">

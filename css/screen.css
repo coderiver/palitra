@@ -168,9 +168,18 @@ p {font-family: 'Open Sans', sans-serif;}
 
 .map { float: left; overflow: hidden; width: 40%; height: 0; padding-bottom: 39%; padding-right: 12px; box-sizing: border-box; -moz-box-sizing: border-box; }
 
-.map__block { float: left; width: 100%; overflow: hidden; height: 0; padding-bottom: 100%; background: url(../img/map.png) scroll 100%; -moz-background-size: cover; -o-background-size: 100% auto; -webkit-background-size: 100% auto; -khtml-background-size: cover; background-size: cover; background-position: 10% 0%; }
+.map__block { position: relative;float: left; width: 100%; overflow: hidden; height: 0; padding-bottom: 100%;  -moz-background-size: cover; -o-background-size: 100% auto; -webkit-background-size: 100% auto; -khtml-background-size: cover; background-size: cover; background-position: 10% 0%; }
 
-.map__text { float: left; -webkit-box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); -moz-box-shadow:    0px 2px 30px 0px rgba(186, 38, 7, 1); box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3); font-family: 'Open Sans Light',sans-serif; background: #f35a39; width: 81%; padding: 40px 10% 13% 10%; font-size: 2em; color: white; font-weight: 300; line-height: 1.8; position: relative; }
+.map__block .actualmap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+}
+.map__text { float: left;z-index: 10; -webkit-box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); -moz-box-shadow:    0px 2px 30px 0px rgba(186, 38, 7, 1); box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3); font-family: 'Open Sans Light',sans-serif; background: #f35a39; width: 81%; padding: 40px 10% 13% 10%; font-size: 2em; color: white; font-weight: 300; line-height: 1.8; position: relative; }
 .map__text i { font-family: 'Open Sans Light Italic',sans-serif;font-style: normal; }
 .map__text .other-cities { cursor: pointer; color: white; padding-right: 16px;}
 .map__text .other-cities span.map__bord { border-bottom: dotted 2px white; }

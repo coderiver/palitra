@@ -23,4 +23,20 @@ head.ready(function() {
 		 $("html, body").animate({ scrollTop: 0 }, 1000);
   			return false;
 	});
+	$('.map__cities a').click(function(event) {
+		$('.map__current').text($(this).data('padej'));
+		$('.actualmap').fadeOut();
+		idd = $(this).attr('href');
+		$(idd+'').fadeIn();
+		$(".map__cities").slideToggle("normal");
+		return false;
+
+	});
+
+	$("#more-cities").click(function(){
+		$(".map__cities").slideToggle("normal"); return false;
+	});
+	$(".top-navigation__like").click(function(){
+		$("#like__panel").slideToggle("normal"); return false;
+	});
 });

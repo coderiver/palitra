@@ -398,6 +398,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .shops { padding-top: 52px; padding-bottom: 30px; padding-right: 13%; width: 72%; }
 .shops .is-red {padding-left: 0px; margin-left: -4px; }
 .shops .is-red .town { margin-left: 5px; font-family: 'Open Sans Italic', sans-serif; border-bottom: dotted 2px #ff512c; color: #ff512c; }
+.shops .is-red .town i { font-style: normal; }
 .shops .is-red .is-redarr { display: inline-block; width: 15px; height: 11px; position: relative; top: 0px; margin-right: 10px; background: url(../img/arrows/arrow-drop-red.png) right center no-repeat; }
 
 .shops__cities { float: left; display: none; clear: both; width: 100%; padding-top: 3%; }

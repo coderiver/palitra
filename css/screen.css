@@ -412,7 +412,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .bigmap{ 
 	overflow: hidden;
 	width: 100%;
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
 }
 .bigmap img{
 	width: 100%;

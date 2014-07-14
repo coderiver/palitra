@@ -190,6 +190,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .map__cities ul li { float: left; width: 100%; }
 .map__cities ul a { float: left; width: 100%; }
 .map__cities ul a:hover {  }
+.map__cities ul a.is-active{font-weight: bold;}
 
 .map__button { float: left; position: absolute; width: 30px; height: 16px; bottom: -16px; right: 48%; background: url(../img/arrows/arrow_map.png) center center; }
 

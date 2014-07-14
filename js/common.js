@@ -24,6 +24,8 @@ head.ready(function() {
   			return false;
 	});
 	$('.map__cities a').click(function(event) {
+		$('.map__cities a').removeClass('is-active');
+		$(this).addClass('is-active');
 		$('.map__current').text($(this).data('padej'));
 		$('.actualmap').fadeOut();
 		idd = $(this).attr('href');

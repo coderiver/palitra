@@ -16,4 +16,9 @@ head.ready(function() {
 		$('.maingl__bigimg').html('<img src="'+pic+'">');
 		return false;
 	});
+
+	$('.footer__button-up').click(function(event) {
+		 $("html, body").animate({ scrollTop: 0 }, 1000);
+  			return false;
+	});
 });

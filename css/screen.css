@@ -185,7 +185,7 @@ p {font-family: 'Open Sans', sans-serif;}
   right: 0;
   top: 0;
 }
-.map__text { float: left;z-index: 10; -webkit-box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); -moz-box-shadow:    0px 2px 30px 0px rgba(186, 38, 7, 1); box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3); font-family: 'Open Sans Light',sans-serif; background: #f35a39; width: 81%; padding: 40px 10% 13% 10%; font-size: 2em; color: white; font-weight: 300; line-height: 1.8; position: relative; }
+.map__text { float: left;z-index: 10; -webkit-box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); -moz-box-shadow:    0px 2px 30px 0px rgba(186, 38, 7, 1); box-shadow: 0px 2px 30px 0px rgba(186, 38, 7, 1); text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3); font-family: 'Open Sans Light',sans-serif; background: #f35a39; width: 80%; padding: 40px 10% 13% 10%; font-size: 2em; color: white; font-weight: 300; line-height: 1.8; position: relative; }
 .map__text i { font-family: 'Open Sans Light Italic',sans-serif;font-style: normal; }
 .map__text .other-cities { cursor: pointer; color: white; padding-right: 16px;}
 .map__text .other-cities span.map__bord { border-bottom: dotted 2px white; }
@@ -382,7 +382,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .news__inf .lil-info__bot:hover .lil-info__arrow { margin-left: 9px; position: relative; top: 2px; }
 .news__inf .lil-info__bot:hover p { opacity: 1; }
 .news__inf .date { width: 100%; font-size: 12px; font-family: Arial, sans-serif; letter-spacing: 0.4px; color: black; position: absolute; bottom: 35px; left: 15%; opacity: 0.3; }
-.news__inf .lil-info__bot:hover .date { left: 16%; }
+.news__inf .lil-info__bot:hover .date { left: 14%; }
 
 .news__inf .lil-info-first { width: 70%; height: 57%; padding: 13% 18% 32% 14%; }
 .news__inf .lil-info-first .lil-info__heading { width: 100%; display: block; font-size: 24px; font-weight: 300; font-family: 'Open Sans Light', sans-serif; letter-spacing: 1.8px; line-height: 1.5; }
@@ -764,3 +764,21 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
   .news__inf h2 .lil-info__arrow { margin-left: 5px; position: relative; top: 4px; display: inline-block; width: 11px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right;  }
   .news__inf p { font-size: 12px; } 
   .news__inf p a	{font-size: 14px; }}
+
+/*lil info hacks*/
+.lil-info__arrow { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; margin-left: 6px; position: relative; top: 4px; display: inline-block; width: 11px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right; }
+.lil-info__bot:hover .lil-info__arrow { top: 2px; }
+.news__inf .lil-info__bot:hover .lil-info__arrow {   top: 2px; }
+/*go translate*/
+/*
+.news__inf .lil-info-first .lil-info__arrow { margin-left: 6px;  top: 2px; }
+@media only screen and (max-width: 1200px) { 
+  .news__inf h2 .lil-info__arrow {   top: 4px;  }
+}
+.filter-block .lil-info__arrow {  top: 4px; }*/
+.lil-info:hover .lil-info__arrow, .catalog__block:hover .lil-info__arrow, .gallery__left:hover .lil-info__arrow, 
+.info__bot:hover h2 .lil-info__arrow, .info__bot-first:hover h2 .lil-info__arrow, .filter-block:hover .lil-info__arrow,.lil-info__bot:hover .lil-info__arrow,
+.news__inf .lil-info__bot:hover .lil-info__arrow    { margin-left: 8px; }
+
+
+

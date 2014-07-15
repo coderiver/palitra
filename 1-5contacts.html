@@ -7,21 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/add.css" >
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-	<script type="text/javascript"> 
-	$(document).ready(function(){
-		$(".top-navigation__like").click(function(){
-		$("#like__panel").slideToggle("normal"); return false;
-		});
-	});
-	</script>
-	<script type="text/javascript"> 
-	$(document).ready(function(){
-		$("#more-cities").click(function(){
-		$(".shops__cities").slideToggle("normal"); return false;
-		});
-	});
-	</script> 
+	
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script type="text/javascript" src="up.js"></script>
 </head>
@@ -101,7 +87,7 @@
 				</div>
 				<div class="bigmap" style="height: 400px">
 					<div class="shops__map" id="map1">
-						<img src="img/bigmap.png" alt="">
+						<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X_Hj-vFdFjNJXFy7kKATvqK5mLYe1AWG&width=600&height=450"></script>
 					</div>
 					<div class="shops__map" id="map2" hidden>
 						<img src="img/bigmap.png" alt="">

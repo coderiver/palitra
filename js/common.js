@@ -1,5 +1,5 @@
 head.ready(function() {
-	$('.bigmap').height($('.shops__map').height());
+	//$('.bigmap').height($('.shops__map').height());
 	$('.shops__tomap').click(function(event) {
 		$('.shops__map').fadeOut();
 		
@@ -32,7 +32,6 @@ head.ready(function() {
 		$(idd+'').fadeIn();
 		$(".map__cities").slideToggle("normal");
 		return false;
-
 	});
 
 	$("#more-cities").click(function(){

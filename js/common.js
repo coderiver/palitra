@@ -40,6 +40,22 @@ head.ready(function() {
 	$(".top-navigation__like").click(function(){
 		$("#like__panel").slideToggle("normal"); return false;
 	});
+
+	if($('.fotorama').length){
+		var $fotoramaDiv = $('.fotorama').fotorama();
+
+	    // 2. Get the API object.
+	    var fotorama = $fotoramaDiv.data('fotorama');
+
+	    // 3. Inspect it in console.
+	    console.log(fotorama);
+	    $('.fotorama__gonext').click(function(event) {
+	    	fotorama.show('>');
+	    });
+	    $('.fotorama__goprev').click(function(event) {
+	    	fotorama.show('<');
+	    });
+	}
 });
 
 function winOpen(){

@@ -6,14 +6,12 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/add.css" >
+	<link rel="stylesheet" media="screen" href="css/fotorama.css" >
 	
 	
-	<!-- 1. Link to jQuery (1.8 or later), -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
-<!-- fotorama.css & fotorama.js. -->
-<link  href="http://fotorama.s3.amazonaws.com/4.5.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="http://fotorama.s3.amazonaws.com/4.5.2/fotorama.js"></script> <!-- 16 KB -->
+
+
 
 	
 </head>
@@ -107,34 +105,18 @@
 					</div>
 					<div class="maingl">
 						<h2 class="is-red is-margintop">Галерея нашего флагманского магазина</h2>
-						<div class="maingl__slider">
-							<div class="maingl__bigimg">
-								<img src="img/pictures/DSC_6026.png" alt="big slide" class="maingl__bigslide">
-							</div>
-							<div class="maingl__panel b-carousel">
-								<div class="maingl__slides h-carousel-wrapper">
-									<div class="slide__block h-carousel-items">
-										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6026.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6026.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6140.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6140.png" alt="slide"></a>
-										<a href="img/pictures/big-img/DSC_6051.png" class="maingl__slitem b-carousel-block"><img src="img/pictures/lil-img/DSC_6051.png" alt="slide"></a>
-									</div>
-								</div>
-								<a class="b-carousel-button-left"><i></i></a>
-								<a class="b-carousel-button-right"><i></i></a>
-							</div>
-						</div>
+						
 						<!-- begin fotorama -->
 						<div class="maingl__slider">
-							<div class="fotorama" data-nav="thumbs" data-transition="crossfade">
+							<div class="fotorama__gonext"><i></i></div>
+							<div class="fotorama__goprev"><i></i></div>
+							<div class="fotorama" data-nav="thumbs" data-transition="crossfade"
+								data-navwidth="734px"
+								data-thumbheight="67"
+								data-thumbwidth="100"
+								data-thumbmargin="0"
+								data-auto="false"
+							>
 								<img src="img/pictures/DSC_6026.png" alt="">
 								<img src="img/pictures/DSC_6026.png" alt="">
 								<img src="img/pictures/DSC_6026.png" alt="">

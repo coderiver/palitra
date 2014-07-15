@@ -806,4 +806,16 @@ margin-left: 0 !important;
 }
 
 
+.maingl__slider{
+  position: relative;
+}
+.fotorama__goprev, .fotorama__gonext {z-index:9999; cursor:pointer; 
+position: absolute;
+bottom: 0;}
+.fotorama__goprev:hover, .fotorama__gonext:hover { background: url(../img/arrows-bg/arrow-right-hover2.png)}
+.fotorama__goprev { float: left; position: absolute; left: 0%; width: 67px; height: 67px; background: url(../img/arrows-bg/arrow-left-hover.png) center center;}
+.fotorama__gonext { float: right; position: absolute; right: 0%; width: 67px; height: 67px; background: url(../img/arrows-bg/arrow-left-hover2.png) center center; }
+.fotorama__goprev i {display: block; height: 67px; width: 100%; background: url(../img/arrows-bg/arrow-left.png) no-repeat center center;}
+.fotorama__gonext i {display: block; height: 67px; width: 100%; background: url(../img/arrows-bg/arrow-right.png) no-repeat center center;}
+
 

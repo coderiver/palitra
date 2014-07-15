@@ -633,7 +633,7 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 .opt .menu__item { margin-left: 19px; margin-right: 16px; }
 .opt .menu__home { float: left; width: 40px; height: 40px; margin: 0px 18px 0px 3px; }
 .opt .home__header { background: url(../img/icons/icon-homepage_red.png) no-repeat center center; }
-.opt .slider__news { background: url(../img/pictures/DSC_6187.png) scroll 100%; }
+.opt .slider__news { }
 .opt .map__block { background: none; background-color: #f2f2f2; }
 .opt .map__text { float: left; background: #f35a39; letter-spacing: 0.1px; width: 82%; padding: 40px 10% 58px 10%; font-size: 24px; color: white; font-weight: 300; line-height: 1.8; position: relative; }
 

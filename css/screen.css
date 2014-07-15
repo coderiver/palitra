@@ -766,7 +766,16 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
   .news__inf p a	{font-size: 14px; }}
 
 /*lil info hacks*/
-.lil-info__arrow { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; margin-left: 6px; position: relative; top: 4px; display: inline-block; width: 11px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right; }
+.lil-info__arrow { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; margin-left: 6px; position: relative; top: 4px; display: inline-block; width: 1px; height: 16px;  }
+.lil-info__arrow i{
+  display: inline-block; width: 11px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lil-info__arrow{
+  
+}
 .lil-info__bot:hover .lil-info__arrow { top: 2px; }
 .news__inf .lil-info__bot:hover .lil-info__arrow {   top: 2px; }
 /*go translate*/

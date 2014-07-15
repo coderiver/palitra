@@ -766,12 +766,16 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
   .news__inf p a	{font-size: 14px; }}
 
 /*lil info hacks*/
-.lil-info__arrow { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; margin-left: 6px; position: relative; top: 4px; display: inline-block; width: 1px; height: 16px;  }
+.lil-info__arrow { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; margin-left: 6px;margin-left: 0; position: relative; top: 4px; display: inline-block; width: 1px; height: 16px;  
+width: 1px !important;
+margin-left: 0 !important;
+}
 .lil-info__arrow i{
-  display: inline-block; width: 11px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right;
+  display: inline-block; width: 10px; height: 16px; background: url(../img/arrows/arrow-right-w.png) no-repeat; background-position: top right;
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 6px;
 }
 .lil-info__arrow{
   
@@ -787,7 +791,19 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 .filter-block .lil-info__arrow {  top: 4px; }*/
 .lil-info:hover .lil-info__arrow, .catalog__block:hover .lil-info__arrow, .gallery__left:hover .lil-info__arrow, 
 .info__bot:hover h2 .lil-info__arrow, .info__bot-first:hover h2 .lil-info__arrow, .filter-block:hover .lil-info__arrow,.lil-info__bot:hover .lil-info__arrow,
-.news__inf .lil-info__bot:hover .lil-info__arrow    { margin-left: 8px; }
+.news__inf .lil-info__bot:hover .lil-info__arrow    { margin-left: 8px;margin-left: 0; }
+
+.lil-info:hover .lil-info__arrow i, 
+.catalog__block:hover .lil-info__arrow i, 
+.gallery__left:hover .lil-info__arrow i, i 
+.info__bot:hover h2 .lil-info__arrow i, 
+.info__bot-first:hover h2 .lil-info__arrow i, 
+.filter-block:hover .lil-info__arrow i,
+.lil-info__bot:hover .lil-info__arrow i,
+.news__inf .lil-info__bot:hover .lil-info__arrow  i {
+  -webkit-transform: translate(2px, 0);
+  transform: translate(2px, 0);
+}
 
 
 

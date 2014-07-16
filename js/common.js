@@ -34,8 +34,19 @@ head.ready(function() {
 		return false;
 	});
 
+
+	$('.shops__cities a').click(function(event) {
+		$('.shops__cities a').removeClass('is-active');
+		$(this).addClass('is-active');
+		$('#more-cities a i').text($(this).text());
+		$('.shops__map').fadeOut();
+		idd = $(this).attr('href');
+		$(idd+'').fadeIn();
+		$(".shops__cities").slideToggle("normal");
+		return false;
+	});
 	$("#more-cities").click(function(){
-		$(".map__cities").slideToggle("normal"); return false;
+		$(".map__cities,.shops__cities").slideToggle("normal"); return false;
 	});
 	$(".top-navigation__like").click(function(){
 		$("#like__panel").slideToggle("normal"); return false;

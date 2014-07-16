@@ -128,7 +128,8 @@ p {font-family: 'Open Sans', sans-serif;}
 
 .menu__is-selected { color: #f35a39; }
 
-.content { float: left; margin-top: 12px; width: 100%; }
+.content { float: left; margin-top: 12px; width: 100%;padding-bottom: 12px; }
+.content_nomargin{padding-bottom: 0;}
 
 .slider__buttons { float: left; width: 48px; margin-left: -48px; height: 96px; margin-top: 180px; }
 
@@ -547,7 +548,7 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 
 .is-first__catalbox { padding-bottom: 25px; }
 
-.footer { margin-top: 12px; float: left; clear: both; width: 100%; background: url(../img/bg-footer.png) no-repeat left center; }
+.footer { margin-top: 12px;margin-top: 0; float: left; clear: both; width: 100%; background: url(../img/bg-footer.png) no-repeat left center; }
 
 .footer__wrapper { float: left; width: 100%; padding: 42px 0px 0px 0px; background: url(../img/filter/bg-green.png); }
 

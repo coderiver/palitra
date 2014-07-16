@@ -262,14 +262,7 @@ p {font-family: 'Open Sans', sans-serif;}
 
 .gallery__right { position: relative; float: left; width: 53%; height: 227px; overflow: hidden; }
 .gallery__right-bg { float: left; width: 100%; height: 227px; position: relative; }
-.gallery__right-bg>ymaps{
-  
-  position: absolute;
-  left: -40px;
-  top: -40px;
-  right: 0
-  bottom: 0;
-}
+
 .gallery__right:hover .gallery__right-bg {
   /*-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); */}
 
@@ -440,9 +433,6 @@ p {font-family: 'Open Sans', sans-serif;}
 .shops__map{
   background: #fff;
   height: 400px;
-}
-.shops__map>ymaps{
-  width: 100% !important;
 }
 
 
@@ -835,4 +825,9 @@ bottom: 0;}
 .fotorama__gonext { float: right; position: absolute; right: 0%; width: 67px; height: 67px; background: url(../img/arrows-bg/arrow-left-hover2.png) center center; }
 .fotorama__goprev i {display: block; height: 67px; width: 100%; background: url(../img/arrows-bg/arrow-left.png) no-repeat center center;}
 .fotorama__gonext i {display: block; height: 67px; width: 100%; background: url(../img/arrows-bg/arrow-right.png) no-repeat center center;}
+.formap{
+  position: absolute;
+  top: 0;right: 0;
+  bottom: 0;left: 0;
+}
 

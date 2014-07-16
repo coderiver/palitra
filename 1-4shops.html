@@ -7,7 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/add.css" >
 	
-	
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	
@@ -85,8 +85,8 @@
 						</div>
 				</div>
 				<div class="bigmap" style="height: 400px">
-					<div class="shops__map" id="map1">
-						<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X_Hj-vFdFjNJXFy7kKATvqK5mLYe1AWG&width=600&height=400"></script>
+					<div class="shops__map">
+						<div id="formap1" class="formap"></div>
 						<div class="bigmap__float">
 						<h2 class="is-red">ТЦ “Galileo”</h2>
 						<div class="bigmap__coordinates">
@@ -97,7 +97,7 @@
 					</div>
 					</div>
 					<div class="shops__map" id="map2" hidden>
-						<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X_Hj-vFdFjNJXFy7kKATvqK5mLYe1AWG&width=600&height=400"></script>
+						<div id="formap2" class="formap"></div>
 						<div class="bigmap__float">
 						<h2 class="is-red">ТЦ “Galileo”222</h2>
 						<div class="bigmap__coordinates">
@@ -108,7 +108,7 @@
 					</div>
 					</div>
 					<div class="shops__map" id="map3" hidden>
-						<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X_Hj-vFdFjNJXFy7kKATvqK5mLYe1AWG&width=600&height=400"></script>
+						<div id="formap3" class="formap"></div>
 						<div class="bigmap__float">
 						<h2 class="is-red">ТЦ “Galileo”333</h2>
 						<div class="bigmap__coordinates">

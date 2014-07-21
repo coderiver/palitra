@@ -1,19 +1,18 @@
 head.ready(function() {
 	//$('.bigmap').height($('.shops__map').height());
-	$('.shops__tomap').click(function(event) {
-		$('.shops__map').fadeOut();
+	// $('.shops__tomap').click(function(event) {
+	// 	$('.shops__map').fadeOut();
 		
-		idd = $(this).attr('href');
-		$(idd+'').fadeIn();
-		//alert(idd);
-		$('html, body').animate({
-	        scrollTop: $(".bigmap").offset().top
-	    }, 500);
-	});
+	// 	idd = $(this).attr('href');
+	// 	$(idd+'').fadeIn();
+	// 	//alert(idd);
+	// 	$('html, body').animate({
+	//         scrollTop: $(".bigmap").offset().top
+	//     }, 500);
+	// });
 	$('body').addClass('a');
 	$( ".maingl" ).on( "click", ".maingl__slitem", function() {
-		
-		
+
 		pic = $(this).attr('href');
 		$('.maingl__bigimg').html('<img src="'+pic+'">');
 		return false;

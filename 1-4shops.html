@@ -6,11 +6,8 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/add.css" >
-	
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -18,30 +15,30 @@
 <div class="out">
 	<div class="all-wrapper">
 		<div class="header">
-				<a href="#" class="header__saletxt"><strong>ОПТОВЫМ КЛИЕНТАМ</strong></a>
-				<div class="top-navigation">
-					<a href="#" class="top-navigation__art-territory"><img src="img/logo/logo_art-territory.png" alt="АРТ Территория"></a>
-					<a href="#" class="top-navigation__hodabbi"><img src="img/logo/logo_hodabbi.png" alt="ХоДабби"></a>
-					<div class="top-navigation__like">
-						<div class="like__bg"><a href="#" class="like"></a></div>
-						<div class="other-likes" id="like__panel">
-							<img src="img/icons/twitter-like.png" alt="#">
-							<img src="img/icons/fb-like.png" alt="#">
-							<img src="img/icons/vk-like.png" alt="#">
-						</div>
-					</div>
-					<div class="top-navigation__menu">
-						<a href="#" class="menu__home home__header"></a>
-						<ul class="menu__panel"> 
-							</li><a href="#" class="menu__item"><strong>КОМПАНИЯ</strong></a></li>
-							</li><a href="#" class="menu__item menu__is-selected"><strong>МАГАЗИНЫ</strong></a></li>
-							</li><a href="#" class="menu__item"><strong>КАТАЛОГ</strong></a></li>
-							</li><a href="#" class="menu__item"><strong>НОВОСТИ</strong></a></li>
-							</li><a href="#" class="menu__item"><strong>КОНТАКТЫ</strong></a></li>
-						</ul>	
+			<a href="#" class="header__saletxt"><strong>ОПТОВЫМ КЛИЕНТАМ</strong></a>
+			<div class="top-navigation">
+				<a href="#" class="top-navigation__art-territory"><img src="img/logo/logo_art-territory.png" alt="АРТ Территория"></a>
+				<a href="#" class="top-navigation__hodabbi"><img src="img/logo/logo_hodabbi.png" alt="ХоДабби"></a>
+				<div class="top-navigation__like">
+					<div class="like__bg"><a href="#" class="like"></a></div>
+					<div class="other-likes" id="like__panel">
+						<img src="img/icons/twitter-like.png" alt="#">
+						<img src="img/icons/fb-like.png" alt="#">
+						<img src="img/icons/vk-like.png" alt="#">
 					</div>
 				</div>
-			</div><!-- END header-->
+				<div class="top-navigation__menu">
+					<a href="#" class="menu__home home__header"></a>
+					<ul class="menu__panel"> 
+						</li><a href="#" class="menu__item"><strong>КОМПАНИЯ</strong></a></li>
+						</li><a href="#" class="menu__item menu__is-selected"><strong>МАГАЗИНЫ</strong></a></li>
+						</li><a href="#" class="menu__item"><strong>КАТАЛОГ</strong></a></li>
+						</li><a href="#" class="menu__item"><strong>НОВОСТИ</strong></a></li>
+						</li><a href="#" class="menu__item"><strong>КОНТАКТЫ</strong></a></li>
+					</ul>	
+				</div>
+			</div>
+		</div><!-- END header-->
 		<div class="content">
 			<div class="heading">
 				<div class="heading__wrapper is-orangebg">
@@ -56,79 +53,40 @@
 					<div class="fb__bg"><a href="#" class="scnet__item scnet__fb"></a></div>
 					<div class="vk__bg"><a href="#" class="scnet__item scnet__vk"></a></div>
 					<div class="twitter__bg"><a href="#" class="scnet__item scnet__twitter"></a></div>
-					<div class="mail__bg" id="mail"><a onclick="winOpen();" type="button" class="scnet__item scnet__mail"></a></div>
-						<div class="subs__hidden" id="divWin">
-							<div class="subs__bg">
-								<div class="subs__border">
-									<div id="closetButton" onclick="winCloset();"></div>
-									<h4 class="subs__heading">Подписаться<br /> на наши новости</h4>
-									<div class="subs__keyword-block"><input type="text" placeholder="ваш e-mail" class="subs__keyword"></div>
-									<input type="button" class="subs__submit" value="ПОДПИСАТЬСЯ">
-								</div>
+					<div class="mail__bg" id="mail">
+						<a onclick="winOpen();" type="button" class="scnet__item scnet__mail"></a>
+					</div>
+					<div class="subs__hidden" id="divWin">
+						<div class="subs__bg">
+							<div class="subs__border">
+								<div id="closetButton" onclick="winCloset();"></div>
+								<h4 class="subs__heading">Подписаться<br /> на наши новости</h4>
+								<div class="subs__keyword-block"><input type="text" placeholder="ваш e-mail" class="subs__keyword"></div>
+								<input type="button" class="subs__submit" value="ПОДПИСАТЬСЯ">
 							</div>
 						</div>
+					</div>
 				</div>
 				<div class="company shops">
 					<h2 class="font__30px">20 магазинов в 8 городах</h2>
 					<h2 class="is-red">Ваш город случаем не <span id="more-cities"><a href="#" class="town"><i>Минск</i></a><span class="is-redarr"></span></span>?</h2>
-						<div class="shops__cities">
-							<ul>
-								<li><a href="#map1"><i>Минкс</i></a></li>
-								<li><a href="#map2"><i>Брест</i></a></li>
-								<li><a href="#map3"><i>Витебск</i></a></li>
-							</ul>
-							<ul>
-								<li><a href="#map1"><i>Гомель</i></a></li>
-								<li><a href="#map2"><i>Гродно</i></a></li>
-								<li><a href="#map3"><i>Могилев</i></a></li>
-							</ul>
-						</div>
+					<div class="shops__cities">
+						<ul>
+							<li><a class="js-show-city" data-city="Минск" href="#"><i>Минск</i></a></li>
+							<li><a class="js-show-city" data-city="Брест" href="#"><i>Брест</i></a></li>
+							<li><a class="js-show-city" data-city="Витебск" href="#"><i>Витебск</i></a></li>
+						</ul>
+						<ul>
+							<li><a class="js-show-city" data-city="Гомель" href="#"><i>Гомель</i></a></li>
+							<li><a class="js-show-city" data-city="Гродно" href="#"><i>Гродно</i></a></li>
+							<li><a class="js-show-city" data-city="Могилев" href="#"><i>Могилев</i></a></li>
+						</ul>
+					</div>
 				</div>
-				<script src="js/lib/jquery.js"></script>
-				<script>
-				ymaps.ready(init);
-
-				function init () {
-				    var myMap = new ymaps.Map("map", {
-				            center: [55.76, 37.64],
-				            zoom: 10
-				        });
-
-				     pl1 = new ymaps.Placemark([55.684758, 37.738521], {
-				              balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
-				        }, {
-				            preset: 'islands#icon',
-				            iconColor: '#0095b6'
-				        });
-				    pl2 = new ymaps.Placemark([55.833436, 37.715175], {
-				              balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
-				        }, {
-				            preset: 'islands#dotIcon',
-				            iconColor: '#735184'
-				        });
-
-				    myMap.geoObjects
-				        .add(pl1)
-				        .add(pl2);
-
-				        $('.shops__tomap').click(function(event) {
-				        	event.preventDefault;
-				        		$('html, body').animate({
-							        scrollTop: $(".bigmap").offset().top
-							    }, 500);
-
-				        });
-				        
-				}
-
-</script>
 				<div class="bigmap" style="height: 400px">
 					<div class="shops__map">
 						<div id="map" class="formap"></div>
-						<!--  -->
 					</div>
-					
-					
 				</div>
 				<div class="company shops">
 					<div class="shops__container is-padding-bottom">
@@ -138,21 +96,21 @@
 							<span class="address">г. Минск, ул. Бобруйская 6, 3-й этаж</span>
 							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 394-91-11</strong></span>
 							<span class="is-grey time">Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18. </span>
-							<a href="#map1" class="shops__tomap" onclick="pl1.balloon.open();">Показать на карте</a>
+							<a href="#map" class="shops__tomap js-show-city" data-city="Минск" onclick="pl1.balloon.open();">Показать на карте</a>
 						</div>
 						<div class="shops__block">
 							<h2 class="is-red">Магазин “Ходабби”</h2>
 							<span class="address">г. Минск, ул. Сурганова 16, 3-й этаж</span>
 							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 31-98-63</strong></span>
 							<span class="is-grey time">Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18. </span>
-							<a href="#map2" class="shops__tomap" onclick="pl2.balloon.open();">Показать на карте</a>
+							<a href="#map" class="shops__tomap js-show-city" data-city="Гомель" onclick="pl2.balloon.open();">Показать на карте</a>
 						</div>
 						<div class="shops__block">
 							<h2 class="is-red">ТД “На Немиге”</h2>
 							<span class="address">г. Минск, ул. Немига 3, павильон 8</span>
 							<span class="phone-nomber">Тел/факс: <strong>+375 (17) 394-91-11</strong></span>
 							<span class="is-grey time">Режим работы: пн-вс.: 10 - 21. </span>
-							<a href="#map3" class="shops__tomap" onclick="pl1.balloon.open();">Показать на карте</a>
+							<a href="#map" class="shops__tomap js-show-city" data-city="Брест" onclick="pl1.balloon.open();">Показать на карте</a>
 						</div>
 					</div>
 					<div class="shops__container">

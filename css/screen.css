@@ -207,7 +207,7 @@ p {font-family: 'Open Sans', sans-serif;}
 
 .catalog__block { float: left; width: 100%; height: 0%; padding-bottom: 100%; }
 
-.catalog__link { float: left; width: 100%; height: 120px; background: url(../img/catalog.png) no-repeat center center; overflow: hidden; }
+.catalog__link { float: left; width: 100%; height: 120px; background: url(../img/catalogfix.png) no-repeat; background-size: cover; -webkit-background-size: cover; overflow: hidden; }
 
 .catalog__link a { background: url(../img/filter/bg-azure.png); width: 69%; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); padding: 25px 15% 17px 17%; height: 77px; display: block; font-weight: 700; font-family: 'Open Sans Bold', sans-serif; color: white; letter-spacing: 0.4px; line-height: 1.7; font-size: 14px; }
 
@@ -250,7 +250,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .soclogo img { padding-top: 31px; margin: 0 auto; display: block;}
 .photo { float: left; margin: 12px 0px 0px 0px; width: 19%; height: 227px; overflow: hidden; padding-right: 12px; box-sizing: border-box; }
 
-.photo__img { float: left; margin: -20px 0px 0px -65px; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.photo__img { float: left; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .photo:hover .photo__img{-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
 .gallery { float: left; overflow:hidden; margin-top: 12px; width: 41%; height: 227px; padding-left: 12px; box-sizing: border-box; }
@@ -372,7 +372,7 @@ p {font-family: 'Open Sans', sans-serif;}
 .width3336 {width: 33.8%;}
 .width34 { width: 32.4%; padding-left: 0px; }
 
-.news__block { overflow: hidden; float: left; width: 100%; height: 355px; background-position: top 0px left -80px; -moz-background-size: cover; -o-background-size: 100% auto; -webkit-background-size: 100% auto; -khtml-background-size: cover; background-size: cover; }
+.news__block { overflow: hidden; float: left; width: 100%; height: 355px;  -moz-background-size: cover; -o-background-size: 100% auto; -webkit-background-size: 100% auto; -khtml-background-size: cover; background-size: cover; }
 
 
 .news__inf { position: relative; float: left; width: 100%; height: 355px; padding: 0px 0% 0px 0%; letter-spacing: 1.3px; line-height: 1.5; }
@@ -401,17 +401,17 @@ p {font-family: 'Open Sans', sans-serif;}
 .news-list .lil-info__bot:hover { overflow: hidden; height: 74%; width: 72%; padding: 13% 16% 15% 14%; }
 .news-list .lil-info__bot p { height: 56%; }
 
-.news__bg21	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6140.png) 100% scroll; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg21	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6140.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg2:hover .news__bg21 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.news__bg31	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6461.png) 100% scroll; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg31	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6461.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg3:hover .news__bg31 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.news__bg41	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6287.png) 100% scroll; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg41	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6287.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg4:hover .news__bg41 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.news__bg51	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6128.png) 100% scroll; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg51	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6128.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg5:hover .news__bg51 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.news__bg61	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6438.png) 100% scroll; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg61	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6438.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg6:hover .news__bg61	{-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.news__bg11	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6438.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.news__bg11	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6438.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .news__bg1:hover .news__bg11 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
 .margin12 { margin-top: 12px; float: left; width: 100%; position: relative; }
@@ -496,31 +496,31 @@ p {font-family: 'Open Sans', sans-serif;}
 
 .is-paddingbot5px { float: left; width: 100%; padding-bottom: 5px; }
 
-.catalog__bg11 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6438.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg11 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6438.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg1:hover .catalog__bg11 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg21	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6652.png) scroll 100%; background-position: top 0px left -80px; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg21	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6652.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg2:hover .catalog__bg21 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg31	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6077.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg31	{ float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6077.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg3:hover .catalog__bg31 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg41 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6287.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg41 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6287.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg4:hover .catalog__bg41 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg51 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6128.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg51 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6128.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg5:hover .catalog__bg51 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg61 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6438.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg61 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6438.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg6:hover .catalog__bg61 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg71 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6077.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg71 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6077.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg7:hover .catalog__bg71 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg81 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6128.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg81 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6128.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg8:hover .catalog__bg81 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
-.catalog__bg91 { float: left; width: 100%; height: 355px; background: url(../img/pictures/DSC_6438.png) scroll 100%; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.catalog__bg91 { float: left; width: 100%; height: 355px; background: url(../img/pictures/fix/DSC_6438.png) no-repeat; background-size: cover; -webkit-background-size: cover; -webkit-transition: all .1s ease;  -moz-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
 .catalog__bg9:hover .catalog__bg91 {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 
 .banner__2-1catalog { background: url(../img/pictures/DSC_6240.png); }
@@ -668,9 +668,9 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 .filter-block a { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); font-weight: 700; font-family: 'Open Sans Bold', sans-serif; font-size: 13px; color: white; line-height: 2; letter-spacing: 1px; }
 .filter-block .date { position: absolute; bottom: 60px; left: 30px; opacity: 0.3; }
 
-.filter-block__bg1 { float: left; width: 100%; height: 227px; background: url(../img/pictures/DSC_6105.png) no-repeat center center; }
+.filter-block__bg1 { float: left; width: 100%; height: 227px; background: url(../img/fb/DSC_6105.png) no-repeat center center; }
 
-.filter-block__bg2 { float: left; width: 100%; height: 227px; background: url(../img/pictures/DSC_6512.png) no-repeat center center; }
+.filter-block__bg2 { float: left; width: 100%; height: 227px; background: url(../img/fb/DSC_6512.png) no-repeat center center; }
 
 .fb__pd { padding-right: 16px; }
 

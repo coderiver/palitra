@@ -112,14 +112,18 @@
 				        .add(pl1)
 				        .add(pl2);
 
+
 				        $('.shops__tomap').click(function(event) {
 				        	event.preventDefault;
 				        		$('html, body').animate({
 							        scrollTop: $(".bigmap").offset().top
 							    }, 500);
 
+
 				        });
-				        
+				        $('body').click(function(event) {
+				        	pl2.balloon.open();
+				        });
 				}
 
 </script>

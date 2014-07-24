@@ -1,15 +1,5 @@
 head.ready(function() {
-	//$('.bigmap').height($('.shops__map').height());
-	// $('.shops__tomap').click(function(event) {
-	// 	$('.shops__map').fadeOut();
-		
-	// 	idd = $(this).attr('href');
-	// 	$(idd+'').fadeIn();
-	// 	//alert(idd);
-	// 	$('html, body').animate({
-	//         scrollTop: $(".bigmap").offset().top
-	//     }, 500);
-	// });
+
 	$('body').addClass('a');
 	$( ".maingl" ).on( "click", ".maingl__slitem", function() {
 
@@ -34,17 +24,6 @@ head.ready(function() {
 	});
 
 
-	//$('.shops__cities a').click(function(event) {
-	//	$('.shops__cities a').removeClass('is-active');
-	//	$(this).addClass('is-active');
-	//	$('#more-cities a i').text($(this).text());
-	//	$('.shops__map').fadeOut();
-	//	idd = $(this).attr('href');
-	//	$(idd+'').fadeIn();
-	//	$(".shops__cities").slideToggle("normal");
-	//	return false;
-	//});
-
 	$("#more-cities").click(function(){
 		$(".map__cities,.shops__cities").slideToggle("normal"); return false;
 	});
@@ -68,102 +47,7 @@ head.ready(function() {
 	    });
 	}
 
-	// map
-	ymaps.ready(init);
-	function init (){
-	  var myMap = new ymaps.Map("map", {
-	    center: [55.76, 37.64],
-	    zoom: 10
-	  });
-	  pl1 = new ymaps.Placemark([55.684758, 37.738521], {
-	    balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
-	  }, {
-	    preset: 'islands#icon',
-	    iconColor: '#0095b6'
-	  });
-	  pl2 = new ymaps.Placemark([55.833436, 37.715175], {
-	    balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
-	  }, {
-	    preset: 'islands#dotIcon',
-	    iconColor: '#735184'
-	  });
-	  myMap.geoObjects.add(pl1).add(pl2);
-	  $('.shops__tomap').click(function(event) {
-	  	event.preventDefault;
-	  		$('html, body').animate({
-		      scrollTop: $(".bigmap").offset().top
-		  }, 500);
-	  });    
-	  $('.js-show-city').on('click', function(){
-	  	var city = $(this).data('city');
-	  	// Поиск координат центра Нижнего Новгорода.
-	  	ymaps.geocode(city, {
-	  	  /**
-	  	   * Опции запроса
-	  	   * @see http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/geocode.xml
-	  	   */
-	  	  // boundedBy: myMap.getBounds(), // Сортировка результатов от центра окна карты
-	  	  // strictBounds: true, // Вместе с опцией boundedBy будет искать строго внутри области, указанной в boundedBy
-	  	  results: 1 // Если нужен только один результат, экономим трафик пользователей
-	  	}).then(function (res) {
-	  		// Выбираем первый результат геокодирования.
-	  		var firstGeoObject = res.geoObjects.get(0),
-	  		    // Координаты геообъекта.
-	  		    coords = firstGeoObject.geometry.getCoordinates(),
-	  		    // Область видимости геообъекта.
-	  		    bounds = firstGeoObject.properties.get('boundedBy');
-	  		// Добавляем первый найденный геообъект на карту.
-	  		myMap.geoObjects.add(firstGeoObject);
-	  		// Масштабируем карту на область видимости геообъекта.
-	  		myMap.setBounds(bounds, {
-	  		  checkZoomRange: true // проверяем наличие тайлов на данном масштабе.
-	  		});
-
-	  		/**
-	  		 * Все данные в виде javascript-объекта.
-	  		 */
-	  		// console.log('Все данные геообъекта: ', firstGeoObject.properties.getAll());
-	  		/**
-	  		 * Метаданные запроса и ответа геокодера.
-	  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/GeocoderResponseMetaData.xml
-	  		 */
-	  		// console.log('Метаданные ответа геокодера: ', res.metaData);
-	  		/**
-	  		 * Метаданные геокодера, возвращаемые для найденного объекта.
-	  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/GeocoderMetaData.xml
-	  		 */
-	  		// console.log('Метаданные геокодера: ', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData'));
-	  		/**
-	  		 * Точность ответа (precision) возвращается только для домов.
-	  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/precision.xml
-	  		 */
-	  		// console.log('precision', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData.precision'));
-	  		/**
-	  		 * Тип найденного объекта (kind).
-	  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/kind.xml
-	  		 */
-	  		// console.log('Тип геообъекта: %s', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData.kind'));
-	  		// console.log('Название объекта: %s', firstGeoObject.properties.get('name'));
-	  		// console.log('Описание объекта: %s', firstGeoObject.properties.get('description'));
-	  		// console.log('Полное описание объекта: %s', firstGeoObject.properties.get('text'));
-
-	  		/**
-	  		 * Если нужно добавить по найденным геокодером координатам метку со своими стилями и контентом балуна, создаем новую метку по координатам найденной и добавляем ее на карту вместо найденной.
-	  		 */
-	  		/**
-	  		 var myPlacemark = new ymaps.Placemark(coords, {
-	  		 iconContent: 'моя метка',
-	  		 balloonContent: 'Содержимое балуна <strong>моей метки</strong>'
-	  		 }, {
-	  		 preset: 'islands#violetStretchyIcon'
-	  		 });
-
-	  		 myMap.geoObjects.add(myPlacemark);
-	  		 */
-	  	});
-			return false;
-	  });
-	};
+	
 
 
 

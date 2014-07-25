@@ -113,7 +113,10 @@
 					  $('.js-show-city').on('click', function(){
 					  	var city = $(this).data('city');
 					  	$('.shops__cities').slideUp();
-					  	$('#more-cities .town i').text($(this).text());
+					  	
+					  	if ($(this).parents().index($('.shops__cities')) != -1) {
+					  		$('#more-cities .town i').text($(this).text());
+					  	}
 					  	// Поиск координат центра Нижнего Новгорода.
 					  	ymaps.geocode(city, {
 					  	  /**
@@ -132,10 +135,15 @@
 					  		    bounds = firstGeoObject.properties.get('boundedBy');
 					  		// Добавляем первый найденный геообъект на карту.
 					  		myMap.geoObjects.add(firstGeoObject);
+					  		
+					  		setTimeout(function(){
+					  			myMap.setZoom(12, {duration: 200});
+					  		}, 1000);
 					  		// Масштабируем карту на область видимости геообъекта.
 					  		myMap.setBounds(bounds, {
 					  		  checkZoomRange: true // проверяем наличие тайлов на данном масштабе.
 					  		});
+
 
 					  		/**
 					  		 * Все данные в виде javascript-объекта.
@@ -179,6 +187,7 @@
 					  		 myMap.geoObjects.add(myPlacemark);
 					  		 */
 					  	});
+	
 							return false;
 					  });
 					};

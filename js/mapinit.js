@@ -12,43 +12,7 @@ function init () {
 	}
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
-    if($('#go1').length){
-	    myMap = new ymaps.Map('go1', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-
-	    myMap = new ymaps.Map('go2', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-
-	    myMap = new ymaps.Map('go3', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-
-	     myMap = new ymaps.Map('go4', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-
-	    myMap = new ymaps.Map('go5', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-
-	    myMap = new ymaps.Map('go6', {
-	        
-	        center: [55.76, 37.64], // Москва
-	        zoom: 10
-	    });
-	}
+    
 	if($('#formap1').length){
 	    new ymaps.Map('formap1', {
 	        center: [55.76, 37.64], // Москва

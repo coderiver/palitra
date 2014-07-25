@@ -118,22 +118,129 @@
 						в <i><span class="map__current">Минске</span> и <a class="other-cities" id="more-cities"><span class="map__bord">других городах</span><span class="map__arrow"></span></a></i>
 						<div class="map__cities">
 							<ul>
-								<li><a href="#go1" data-padej="Минске"><i>Минск</i></a></li>
-								<li><a href="#go2" data-padej="Бресте"><i>Брест</i></a></li>
-								<li><a href="#go3" data-padej="Витебске"><i>Витебск</i></a></li>
+								<li><a href="#go1" data-padej="Минске" data-city="Минск"><i>Минск</i></a></li>
+								<li><a href="#go2" data-padej="Бресте" data-city="Брест"><i>Брест</i></a></li>
+								<li><a href="#go3" data-padej="Витебске" data-city="Витебск"><i>Витебск</i></a></li>
 							</ul>
 							<ul>
-								<li><a href="#go4" data-padej="Гомеле"><i>Гомель</i></a></li>
-								<li><a href="#go5" data-padej="Гродно"><i>Гродно</i></a></li>
-								<li><a href="#go6" data-padej="Могилеве"><i>Могилев</i></a></li>
+								<li><a href="#go4" data-padej="Гомеле" data-city="Гомель"><i>Гомель</i></a></li>
+								<li><a href="#go5" data-padej="Гродно" data-city="Евпатория"><i>Гродно</i></a></li>
+								<li><a href="#go6" data-padej="Могилеве" data-city="Могилев"><i>Могилев</i></a></li>
 							</ul>
 						</div>
 						<div class="map__button"></div>
 					</div>
+
+
+					<script>
+						// map
+						ymaps.ready(init);
+						function init (){
+						  var myMap = new ymaps.Map("go1", {
+						    center: [55.76, 37.64],
+						    zoom: 10
+						  });
+						  pl1 = new ymaps.Placemark([55.684758, 37.738521], {
+						    balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
+						  }, {
+						    preset: 'islands#icon',
+						    iconColor: '#0095b6'
+						  });
+						  pl2 = new ymaps.Placemark([55.833436, 37.715175], {
+						    balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
+						  }, {
+						    preset: 'islands#dotIcon',
+						    iconColor: '#735184'
+						  });
+						  myMap.geoObjects.add(pl1).add(pl2);
+				    
+						  $('.map__cities a').on('click', function(){
+						  	var city = $(this).data('city');
+						  	$(".map__cities").slideToggle("normal");
+						  	$('.map__current').text($(this).data('padej'));
+						  	
+						  	if ($(this).parents().index($('.shops__cities')) != -1) {
+						  		$('#more-cities .town i').text($(this).text());
+						  	}
+						  	// Поиск координат центра Нижнего Новгорода.
+						  	ymaps.geocode(city, {
+						  	  /**
+						  	   * Опции запроса
+						  	   * @see http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/geocode.xml
+						  	   */
+						  	  // boundedBy: myMap.getBounds(), // Сортировка результатов от центра окна карты
+						  	  // strictBounds: true, // Вместе с опцией boundedBy будет искать строго внутри области, указанной в boundedBy
+						  	  results: 1 // Если нужен только один результат, экономим трафик пользователей
+						  	}).then(function (res) {
+						  		// Выбираем первый результат геокодирования.
+						  		var firstGeoObject = res.geoObjects.get(0),
+						  		    // Координаты геообъекта.
+						  		    coords = firstGeoObject.geometry.getCoordinates(),
+						  		    // Область видимости геообъекта.
+						  		    bounds = firstGeoObject.properties.get('boundedBy');
+						  		// Добавляем первый найденный геообъект на карту.
+						  		myMap.geoObjects.add(firstGeoObject);
+						  		
+						  		setTimeout(function(){
+						  			myMap.setZoom(12, {duration: 200});
+						  		}, 1000);
+						  		// Масштабируем карту на область видимости геообъекта.
+						  		myMap.setBounds(bounds, {
+						  		  checkZoomRange: true // проверяем наличие тайлов на данном масштабе.
+						  		});
+
+
+						  		/**
+						  		 * Все данные в виде javascript-объекта.
+						  		 */
+						  		// console.log('Все данные геообъекта: ', firstGeoObject.properties.getAll());
+						  		/**
+						  		 * Метаданные запроса и ответа геокодера.
+						  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/GeocoderResponseMetaData.xml
+						  		 */
+						  		// console.log('Метаданные ответа геокодера: ', res.metaData);
+						  		/**
+						  		 * Метаданные геокодера, возвращаемые для найденного объекта.
+						  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/GeocoderMetaData.xml
+						  		 */
+						  		// console.log('Метаданные геокодера: ', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData'));
+						  		/**
+						  		 * Точность ответа (precision) возвращается только для домов.
+						  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/precision.xml
+						  		 */
+						  		// console.log('precision', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData.precision'));
+						  		/**
+						  		 * Тип найденного объекта (kind).
+						  		 * @see http://api.yandex.ru/maps/doc/geocoder/desc/reference/kind.xml
+						  		 */
+						  		// console.log('Тип геообъекта: %s', firstGeoObject.properties.get('metaDataProperty.GeocoderMetaData.kind'));
+						  		// console.log('Название объекта: %s', firstGeoObject.properties.get('name'));
+						  		// console.log('Описание объекта: %s', firstGeoObject.properties.get('description'));
+						  		// console.log('Полное описание объекта: %s', firstGeoObject.properties.get('text'));
+
+						  		/**
+						  		 * Если нужно добавить по найденным геокодером координатам метку со своими стилями и контентом балуна, создаем новую метку по координатам найденной и добавляем ее на карту вместо найденной.
+						  		 */
+						  		/**
+						  		 var myPlacemark = new ymaps.Placemark(coords, {
+						  		 iconContent: 'моя метка',
+						  		 balloonContent: 'Содержимое балуна <strong>моей метки</strong>'
+						  		 }, {
+						  		 preset: 'islands#violetStretchyIcon'
+						  		 });
+
+						  		 myMap.geoObjects.add(myPlacemark);
+						  		 */
+						  	});
+					
+								return false;
+						  });
+						};
+					</script>
 					<div class="actualmap" id="go1">
 						
 					</div>
-					<div class="actualmap" id="go2" hidden>
+<!-- 					<div class="actualmap" id="go2" hidden>
 						
 					</div>
 					<div class="actualmap" id="go3" hidden>
@@ -147,7 +254,7 @@
 					</div>
 					<div class="actualmap" id="go6" hidden>
 						
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="catalog is-third">

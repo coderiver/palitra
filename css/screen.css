@@ -705,8 +705,28 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 
 .brends__block { float: left; overflow: hidden; width: 25%; height: 0; padding-bottom: 25%; padding-right: 12px; box-sizing: border-box; -moz-box-sizing: border-box; }
 
-.brends__logo { float: left; width: 100%; height: 0%; padding-bottom: 100%; }
-
+.brends__logo { background-color: #f2f2f2;float: left; width: 100%; height: 0%; padding-bottom: 100%; }
+.brends__logo:hover{
+  /*background: #f84646;*/
+}
+.brends__logo{
+  text-align: center;
+  position: relative;
+}
+.brends__hover,.brends__default{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+}
+.brends__hover{
+  display: none;
+}
+.brends__logo:hover .brends__default{display: none;}
+.brends__logo:hover .brends__hover{display: block;}
 .brends__canpol { background: url(../img/logo/canpol2.png) no-repeat center center #f2f2f2; }
 
 .brends__canpol:hover { background: url(../img/logo/canpol2.png) no-repeat center center #f84646; }

@@ -707,7 +707,7 @@ h2.font36px a { margin-top: 20px; margin-left: 10px; font-size: 36px; font-famil
 
 .brends__logo { background-color: #f2f2f2;float: left; width: 100%; height: 0%; padding-bottom: 100%; }
 .brends__logo:hover{
-  /*background: #f84646;*/
+  background: #f84646;
 }
 .brends__logo{
   text-align: center;

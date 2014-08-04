@@ -1,0 +1,44 @@
+.slider__news1 .lil-info__bot, .slider__news1 .lil-info__bot * { -webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important; }
+
+.catalog__list { background: url(../img/arrows/arrow-blue-bot.png) repeat-x 50% 1px; }
+
+.catalog__link a { padding-bottom: 18px; }
+
+.catalog__list, .catalog__list:focus { outline: none; box-shadow: none !important; }
+
+.socnet { background: white; }
+
+.slider:hover .lil-info__bot { width: 70%; height: 73%; padding: 13% 16% 16% 16%; }
+.slider:hover .lil-info__bot .lil-info__heading { font-size: 24px; font-weight: 300; font-family: "Open Sans Light", sans-serif; letter-spacing: 1.8px; line-height: 1.5; }
+.slider:hover .lil-info__bot .lil-info__arrow { margin-left: 9px; position: relative; top: 2px; }
+.slider:hover .lil-info__bot p { opacity: 1; }
+
+.slider__button-left { position: relative; overflow: hidden; background: none; }
+.slider__button-left:before { position: absolute; top: -48px; height: 48px; left: 0; width: 100%; background: #f24f2d; content: " "; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 1; }
+.slider__button-left:after { position: absolute; width: 48px; left: 0; height: 48px; z-index: 20; background: url(../img/arrows-bg/arrow-left.png) center center no-repeat; content: " "; }
+.slider__button-left:hover:before { top: 0; }
+
+.slider__button-right { position: relative; overflow: hidden; background: none; }
+.slider__button-right:before { position: absolute; top: -48px; height: 48px; left: 0; width: 100%; background: #f24f2d; content: " "; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 1; }
+.slider__button-right:after { position: absolute; width: 48px; left: 0; height: 48px; z-index: 20; background: url(../img/arrows-bg/arrow-right.png) center center no-repeat; content: " "; }
+.slider__button-right:hover:before { top: 0; }
+
+.soclogo a:hover img { animation: none !important; -webkit-animation: none !important; position: relative; z-index: 3; }
+
+.soclogo__vk, .soclogo__fb, .soclogo__twitter { position: relative; overflow: hidden; }
+.soclogo__vk:before, .soclogo__fb:before, .soclogo__twitter:before { content: " "; position: absolute; z-index: 2; width: 100%; height: 100%; height: 77px; top: -77px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.soclogo__vk:hover:before, .soclogo__fb:hover:before, .soclogo__twitter:hover:before { top: 0; }
+
+.soclogo__vk { background: #5a7ea5; }
+.soclogo__vk:before { background: #486584; }
+
+.soclogo__fb { background: #3c579a; }
+.soclogo__fb:before { background: #2e4275; }
+
+.soclogo__twitter { background: #33ccff; }
+.soclogo__twitter:before { background: deepskyblue; }
+
+.footer__button-up { position: relative; overflow: hidden; }
+.footer__button-up span { z-index: 20; position: relative; }
+.footer__button-up:before { content: " "; position: absolute; z-index: 2; width: 100%; height: 100%; height: 60px; top: -60px; background: #f24f2d; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; z-index: 2; }
+.footer__button-up:hover:before { top: 0; }

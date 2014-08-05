@@ -47,3 +47,17 @@ a.subs__submit { height: 38px; text-align: center; display: inline-block; line-h
 a.subs__submit:before { content: " "; position: absolute; z-index: 2; width: 100%; height: 60px; top: -60px; background: #f24f2d; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; z-index: 2; left: 0; }
 a.subs__submit span { position: relative; z-index: 3; }
 a.subs__submit:hover:before { top: 0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+@media only screen and (max-width: 1399px) { body * { -webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important; }
+  .subs { height: 192px; }
+  .subs__border { height: 181px; padding-top: 3px; }
+  .subs__bg { height: 192px; }
+  .soclogo { height: 192px; }
+  .soclogo > a { height: 64px; }
+  .soclogo > a img { padding-top: 23px; }
+  .photo.is-sixth { height: 192px; }
+  .gallery.is-seventh, .gallery.is-sixth { height: 192px; overflow: hidden; }
+  .gallery.is-seventh .gallery__left, .gallery.is-sixth .gallery__left { padding-top: 76px; }
+  .gallery.is-seventh .gallery__right, .gallery.is-sixth .gallery__right { height: 192px; }
+  .filter-block.fb__pd.fb__first.is-fourth { height: 192px; }
+  .filter-block.is-fifth { height: 192px; } }

@@ -69,17 +69,19 @@
 				</div>
 				<div class="company shops">
 					<h2 class="font__30px">20 магазинов в 8 городах</h2>
-					<h2 class="is-red">Ваш город случаем не <span id="more-cities"><a href="#" class="town"><i>Минск</i></a><span class="is-redarr"></span></span>?</h2>
+					<!-- <h2 class="is-red">Ваш город случаем не <span id="more-cities"><a href="#" class="town"><i>Минск</i></a><span class="is-redarr"></span></span>?</h2>
+ -->
+					<h2  class="is-red">Сеть магазинов для творчества: профессиональные материалы в <span id="shopscurrentcity">Минске</span> и <span id="more-citiesup"><a href="#" class="town"><i>других городах</i></a><span class="is-redarr"></span></span></h2>
 					<div class="shops__cities">
 						<ul>
-							<li><a class="js-show-city" data-city="Минск" href="#"><i>Минск</i></a></li>
-							<li><a class="js-show-city" data-city="Брест" href="#"><i>Брест</i></a></li>
-							<li><a class="js-show-city" data-city="Витебск" href="#"><i>Витебск</i></a></li>
+							<li><a class="js-show-city" data-city="Минск" data-padej="Минске" href="#"><i>Минск</i></a></li>
+							<li><a class="js-show-city" data-city="Брест" data-padej="Бресте" href="#"><i>Брест</i></a></li>
+							<li><a class="js-show-city" data-city="Витебск" data-padej="Витебске" href="#"><i>Витебск</i></a></li>
 						</ul>
 						<ul>
-							<li><a class="js-show-city" data-city="Гомель" href="#"><i>Гомель</i></a></li>
-							<li><a class="js-show-city" data-city="Гродно" href="#"><i>Гродно</i></a></li>
-							<li><a class="js-show-city" data-city="Могилев" href="#"><i>Могилев</i></a></li>
+							<li><a class="js-show-city" data-city="Гомель" data-padej="Гомеле" href="#"><i>Гомель</i></a></li>
+							<li><a class="js-show-city" data-city="Гродно" data-padej="Гродно" href="#"><i>Гродно</i></a></li>
+							<li><a class="js-show-city" data-city="Могилев" data-padej="Могилеве" href="#"><i>Могилев</i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -115,7 +117,7 @@
 					  	$('.shops__cities').slideUp();
 					  	
 					  	if ($(this).parents().index($('.shops__cities')) != -1) {
-					  		$('#more-cities .town i').text($(this).text());
+					  		$('#shopscurrentcity').text($(this).data('padej'));
 					  	}
 					  	// Поиск координат центра Нижнего Новгорода.
 					  	ymaps.geocode(city, {

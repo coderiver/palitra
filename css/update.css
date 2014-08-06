@@ -61,3 +61,5 @@ a.subs__submit:hover:before { top: 0; -webkit-transition: all 0.2s ease; -moz-tr
   .gallery.is-seventh .gallery__right, .gallery.is-sixth .gallery__right { height: 192px; }
   .filter-block.fb__pd.fb__first.is-fourth { height: 192px; }
   .filter-block.is-fifth { height: 192px; } }
+.photo.is-sixth { padding-right: 0; }
+.photo.is-sixth video { width: 100%; }

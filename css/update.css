@@ -62,3 +62,13 @@ a.subs__submit:hover:before { top: 0; -webkit-transition: all 0.2s ease; -moz-tr
   .filter-block.is-fifth { height: 192px; } }
 .photo.is-sixth { padding-right: 0; background: url(../img/poster.jpg) no-repeat 0 0; }
 .photo.is-sixth video { width: 100%; }
+
+.map__logos { font-size: 0; position: relative; }
+.map__logos .map__logosslide { width: 100%; }
+.map__logos .map__logoswrap { position: relative; margin-right: -15px; }
+.map__logos .map__logo { float: none; display: inline-block; height: auto; vertical-align: middle; text-align: center; }
+.map__logos a { display: inline-block; vertical-align: middle; float: none !important; }
+.map__logos a img { display: inline-block; width: 70%; }
+
+@media only screen and (min-width: 1400px) { .map__logosslide { display: block !important; position: static !important; opacity: 1 !important; }
+  .map__logosslide.cycle-sentinel { display: none !important; } }

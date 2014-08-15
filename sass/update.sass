@@ -197,3 +197,31 @@ a.subs__submit
 	background: url(../img/poster.jpg) no-repeat 0 0 
 	video
 		width: 100% 
+.map__logos
+	font-size: 0 
+	position: relative
+	.map__logosslide
+		width: 100% 
+	.map__logoswrap
+		position: relative
+		margin-right: -15px 
+	.map__logo
+		float: none
+		display: inline-block
+		height: auto
+		vertical-align: middle
+		text-align: center
+	a
+		display: inline-block
+		vertical-align: middle
+		float: none !important
+		img
+			display: inline-block
+			width: 70% 
+@media only screen and (min-width: 1400px)
+	.map__logosslide
+		display: block !important
+		position: static !important
+		opacity: 1 !important 
+		&.cycle-sentinel
+			display: none !important

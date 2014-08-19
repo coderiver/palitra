@@ -166,6 +166,10 @@ a.subs__submit
 @media only screen and (max-width: 1399px)
 	// body *
 	// 	+transition(none !important)
+	.map__logos_small
+		display: block !important
+	.map__logoswrap
+		height: 92px !important
 	.subs
 		height: 192px 
 	.subs__border
@@ -200,6 +204,10 @@ a.subs__submit
 .map__logos
 	font-size: 0 
 	position: relative
+	&.map__logos_big
+		display: none
+	&.map__logos_small
+		display: none
 	.map__logosslide
 		width: 100% 
 	.map__logoswrap
@@ -219,9 +227,13 @@ a.subs__submit
 			display: inline-block
 			width: 70% 
 @media only screen and (min-width: 1400px)
-	.map__logosslide
+	.map__logos_big
 		display: block !important
-		position: static !important
-		opacity: 1 !important 
-		&.cycle-sentinel
-			display: none !important
+	.map__logoswrap
+		height: 220px !important
+	// .map__logosslide
+	// 	display: block !important
+	// 	position: static !important
+	// 	opacity: 1 !important 
+	// 	&.cycle-sentinel
+	// 		display: none !important

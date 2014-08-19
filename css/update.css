@@ -48,7 +48,9 @@ a.subs__submit:before { content: " "; position: absolute; z-index: 2; width: 100
 a.subs__submit span { position: relative; z-index: 3; }
 a.subs__submit:hover:before { top: 0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
 
-@media only screen and (max-width: 1399px) { .subs { height: 192px; }
+@media only screen and (max-width: 1399px) { .map__logos_small { display: block !important; }
+  .map__logoswrap { height: 92px !important; }
+  .subs { height: 192px; }
   .subs__border { height: 181px; padding-top: 3px; }
   .subs__bg { height: 192px; }
   .soclogo { height: 192px; }
@@ -64,11 +66,13 @@ a.subs__submit:hover:before { top: 0; -webkit-transition: all 0.2s ease; -moz-tr
 .photo.is-sixth video { width: 100%; }
 
 .map__logos { font-size: 0; position: relative; }
+.map__logos.map__logos_big { display: none; }
+.map__logos.map__logos_small { display: none; }
 .map__logos .map__logosslide { width: 100%; }
 .map__logos .map__logoswrap { position: relative; margin-right: -15px; }
 .map__logos .map__logo { float: none; display: inline-block; height: auto; vertical-align: middle; text-align: center; }
 .map__logos a { display: inline-block; vertical-align: middle; float: none !important; }
 .map__logos a img { display: inline-block; width: 70%; }
 
-@media only screen and (min-width: 1400px) { .map__logosslide { display: block !important; position: static !important; opacity: 1 !important; }
-  .map__logosslide.cycle-sentinel { display: none !important; } }
+@media only screen and (min-width: 1400px) { .map__logos_big { display: block !important; }
+  .map__logoswrap { height: 220px !important; } }
